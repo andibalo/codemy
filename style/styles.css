@@ -1,0 +1,221 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  color: #212226;
+}
+
+section {
+  background: white;
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.contentBox {
+  padding: 120px 0;
+}
+#preloader {
+  /* position fixed  positions elemt relative to viewport*/
+  position: fixed;
+  /* without background color it will show elements beneath it even though z index max bcs color is transparent */
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* we give z index to max so its on top of every element on page to hide the contents before loaded */
+  z-index: 9999;
+}
+
+#loaderImage {
+  /* position absolute position properties totals browser width/height plus element width/height
+    thus we its not centered. To counter it we give negative margin top and left values realtive to the percentage
+    50% means 1/2 of height and width. NOTE: margin right and bottom width positive valuse does not work  */
+
+  background: url(../img/ripple.gif);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+.bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  background: url(../video/solo.jpg) no-repeat;
+  background-size: cover;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+}
+.homeOverlay {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Vertical align using table,table cell and vertical align */
+.content {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+.contentInner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* targets h1 blocks inside header wrapper block */
+.contentHeader h1 {
+  font-size: 60px;
+  font-weight: 200;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contentHeader h1 span {
+  color: #1cbaff;
+}
+
+.contentButton {
+  margin-top: 20px;
+}
+.btn-general {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  padding: 12px 46px;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid white;
+  transition: all 0.5s;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+  color: white;
+  background: #1cbaff;
+  border: 1px solid #1cbaff;
+}
+
+/* left properti percentage is the percent of browser width + element width hence not centered, therefore
+a transform x by -50% (to left) is required to center it */
+.arrowDown {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  color: #fff;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.arrowDown:hover,
+.arrowDown:focus {
+  color: #1cbaff;
+}
+
+.navbar {
+  transition: all 0.5s;
+}
+.navbar-nav {
+  padding: 12px 40px;
+}
+.nav-item a {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+}
+
+.nav-item a:focus,
+.nav-item a:hover {
+  color: #1cbaff;
+}
+.navbar-brand {
+  font-size: 30px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding: 12px 0 12px 50px;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: white;
+}
+.navbar-brand span {
+  color: #1cbaff;
+}
+
+.navBlue {
+  background: rgba(28, 186, 255, 0.9);
+  box-shadow: 0 4px 0 0 whitesmoke;
+}
+
+.navBlue .container-fluid .navbar-brand {
+  color: white;
+}
+.navBlue .container-fluid .navbar-brand span {
+  color: #212226;
+}
+.navBlue .container-fluid .container .collapse ul li a:hover,
+.navBlue .container-fluid .container .collapse ul li a:focus {
+  color: #212226;
+}
+
+#typewriter:hover,
+#typewriter:focus {
+  text-decoration: none;
+  cursor: default;
+}
+
+/* display inline block makes it so that its width doesnt behave like block */
+.verticalHeader h5 {
+  color: #1cbaff;
+  position: relative;
+  display: inline-block;
+  transform: rotate(-90deg);
+  top: 60px;
+  left: -90px;
+  text-transform: uppercase;
+  font-weight: 500;
+  word-spacing: 5px;
+}
+
+.verticalHeader h2 {
+  margin-left: 40px;
+  font-size: 43px;
+  font-weight: 200;
+  line-height: 1.1;
+}
+
+.aboutRight p:first-child {
+  margin-bottom: 30px;
+}

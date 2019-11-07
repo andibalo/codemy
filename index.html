@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Codemy</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/8baf7ecf86.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style/styles.css" />
+  </head>
+  <body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+      <div id="loaderImage"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm fixed-top ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span>C</span>o<span>d</span>emy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME -->
+    <div class="home">
+      <video class="bgVideo" poster="./video/solo.jpg" autoplay loop muted>
+        <source src="./video/solo.mp4" type="video/mp4" />
+        <source src="./video/solo.ogv" type="video/ogg" />
+        <source src="./video/solo.webm" type="video/webm" />
+      </video>
+
+      <div class="homeOverlay"></div>
+
+      <div class="content">
+        <div class="contentInner text-center">
+          <div class="contentHeader">
+            <h1>A <span>Coding</span> Academy</h1>
+            <h1>
+              For
+              <a
+                id="typewriter"
+                href="#"
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "Game Changers.", "Entrepreneurs.", "Difference Makers.", "Heroes." ]'
+              >
+                <span class="wrap"></span>
+              </a>
+            </h1>
+          </div>
+
+          <div class="contentButton">
+            <button
+              class="btn btn-outline-primary rounded-pill btn-general btn-home"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="arrowDown"
+        ><i class="fas fa-angle-down fa-5x"></i
+      ></a>
+    </div>
+
+    <!--About-->
+    <section id="about">
+      <div class="contentBox">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="aboutLeft">
+                <div class="verticalHeader">
+                  <h5>Who We Are</h5>
+                  <h2>A <strong>Story</strong><br />About Us</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="aboutRight">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident deserunt quidem non itaque eligendi quasi, deleniti
+                  natus minus ratione aliquam? Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Deserunt, accusamus!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias impedit culpa aperiam illum itaque ut nam
+                  repudiandae quas nostrum magnam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
