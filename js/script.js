@@ -1,5 +1,3 @@
-//NOTE: WHY WINDOW NOT DOCUEMENT
-
 $(window).on("load", () => {
   $("#loaderImage").fadeOut();
 
@@ -86,3 +84,19 @@ window.onload = function() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+
+$(() => {
+  $("#teamMembers").owlCarousel({
+    items: 2,
+    loop: true,
+    smartSpeed: 700,
+    autoplay: false,
+    autoplayHoverPause: true,
+    nav: true,
+    dots: false,
+    navText: [
+      '<i class="fas fa-angle-left"></i>',
+      '<i class="fas fa-angle-right"></i>'
+    ]
+  });
+});
