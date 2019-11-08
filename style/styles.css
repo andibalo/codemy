@@ -210,7 +210,7 @@ a transform x by -50% (to left) is required to center it */
 }
 
 .verticalHeader h2 {
-  margin-left: 40px;
+  margin-left: 30px;
   font-size: 43px;
   font-weight: 200;
   line-height: 1.1;
@@ -218,4 +218,59 @@ a transform x by -50% (to left) is required to center it */
 
 .aboutRight p:first-child {
   margin-bottom: 30px;
+}
+
+.about2 {
+  background: #f4f4f4;
+}
+
+.aboutCard {
+  background: #fff;
+  padding: 90px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.aboutCard i {
+  margin-bottom: 15px;
+  transition: all 0.3s;
+}
+
+/* hr tag is used to create underline, it is container which is very small. can receive height/width property
+and background property. comes with border so has to be removed.
+MARIGN 0 auto makes it horizontally aligned */
+.aboutCard hr {
+  width: 50px;
+  height: 3px;
+  background: #1cbaff;
+  border: none;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+.aboutCard p {
+  margin-top: 25px;
+  transition: all 0.3s;
+}
+
+.aboutCard:hover,
+.aboutCard:focus {
+  background: #1cbaff;
+}
+
+.aboutCard:hover > i,
+.aboutCard:focus > i {
+  transform: translateY(-40%);
+  color: #fff;
+}
+.aboutCard:hover > hr,
+.aboutCard:focus > hr {
+  background: #fff;
+}
+
+.aboutCard:hover > h3,
+.aboutCard:focus > h3,
+.aboutCard:hover > p,
+.aboutCard:focus > p {
+  color: #fff;
 }
