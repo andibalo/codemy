@@ -298,7 +298,8 @@ MARIGN 0 auto makes it horizontally aligned */
 }
 
 /* ANIMATION effect when on hover the eles inside container appears from nothing we use opacity 0 and opacity 1.
-   Opacity casues all elemtns inside targeted elemtn to disappear/full transparent if set to 0 */
+   Opacity casues all elemtns inside targeted elemtn to disappear/full transparent if set to 0 
+   OPCAITY is used in conjunction with rgba*/
 .teamOverlay {
   background: rgba(33, 34, 38, 0.7);
   position: absolute;
@@ -312,7 +313,7 @@ MARIGN 0 auto makes it horizontally aligned */
 }
 
 .memberDesc {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 .teamMember:hover .teamOverlay {
   opacity: 1;
@@ -343,4 +344,56 @@ MARIGN 0 auto makes it horizontally aligned */
   line-height: 35px;
   font-size: 18px;
   border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.socials li:nth-child(1) a:hover {
+  background-color: #e1306c;
+  border-color: transparent;
+}
+
+.socials li:nth-child(2) a:hover {
+  background-color: #c9510c;
+  border-color: transparent;
+}
+.socials li:nth-child(3) a:hover {
+  background-color: #2867b2;
+  border-color: transparent;
+}
+
+#statement {
+  color: white;
+  position: relative;
+  background: url(https://source.unsplash.com/KYZoOmpn1Aw) no-repeat;
+  background-size: cover;
+  background-position-y: -70%;
+  background-attachment: fixed;
+}
+
+/* TO Overlay a background image you can create an overlay withh position absolute and max width and height OR
+  set background of first child elemtn to transparent */
+#statement .contentBox {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.founderMessage h2,
+.founderMessage cite span {
+  color: #1cbaff;
+}
+
+.founderMessage cite span {
+  font-weight: 600;
+}
+
+.horizontalHeading h5 {
+  color: #1cbaff;
+  text-transform: uppercase;
+  font-weight: 500;
+  word-spacing: 5px;
+}
+
+.horizontalHeading h2 {
+  font-size: 43px;
+  font-weight: 200;
+  line-height: 1.1;
 }

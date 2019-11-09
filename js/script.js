@@ -90,7 +90,7 @@ $(() => {
     items: 2,
     loop: true,
     smartSpeed: 700,
-    autoplay: false,
+    autoplay: true,
     autoplayHoverPause: true,
     nav: true,
     dots: false,
@@ -99,4 +99,8 @@ $(() => {
       '<i class="fas fa-angle-right"></i>'
     ]
   });
+});
+
+$(".imgContainer").click(() => {
+  $("#exampleModal").modal("show");
 });
