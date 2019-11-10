@@ -385,6 +385,9 @@ MARIGN 0 auto makes it horizontally aligned */
   font-weight: 600;
 }
 
+.horizontalHeading {
+  margin-bottom: 75px;
+}
 .horizontalHeading h5 {
   color: #1cbaff;
   text-transform: uppercase;
@@ -396,4 +399,60 @@ MARIGN 0 auto makes it horizontally aligned */
   font-size: 43px;
   font-weight: 200;
   line-height: 1.1;
+}
+
+#coursesTabs ul {
+  margin-bottom: 40px;
+}
+
+#coursesTabs ul li {
+  padding: 0 30px;
+}
+
+#coursesTabs ul li.r-tabs-state-active a {
+  color: #1cbaff;
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #1cbaff;
+}
+
+#coursesTabs ul li a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: #212226;
+  text-transform: uppercase;
+}
+
+.tabBg {
+  background: #1cbaff;
+  color: #f4f4f4;
+  padding: 45px 25px;
+  min-height: 380px;
+}
+
+.tabBg p {
+  line-height: 2;
+}
+
+.tabHeader {
+  margin-bottom: 40px;
+}
+
+#coursesTabs .col-md-6 {
+  padding: 0;
+}
+
+.btn-tab {
+  background-color: #f4f4f4;
+  color: #1cbaff;
+  border-color: #f4f4f4;
+  padding: 10px 40px;
+  font-size: 18px;
+}
+
+.btn-tab:hover,
+.btn-tab:focus {
+  background-color: #1cbaff;
+  color: #f4f4f4;
+  border-color: #f4f4f4;
 }

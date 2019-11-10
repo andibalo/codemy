@@ -101,6 +101,9 @@ $(() => {
   });
 });
 
-$(".imgContainer").click(() => {
-  $("#exampleModal").modal("show");
+//@TODO find out how to make fade animation
+$(() => {
+  $("#coursesTabs").responsiveTabs({
+    animation: "slide"
+  });
 });
