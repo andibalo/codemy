@@ -456,3 +456,11 @@ MARIGN 0 auto makes it horizontally aligned */
   color: #f4f4f4;
   border-color: #f4f4f4;
 }
+
+#projects {
+  background: #f4f4f4;
+}
+
+#projectHeader .verticalHeader {
+  margin-bottom: 100px;
+}

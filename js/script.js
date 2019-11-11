@@ -107,3 +107,17 @@ $(() => {
     animation: "slide"
   });
 });
+
+//ISOTOPE FILETRING
+$(window).on("load", () => {
+  //Init Isotope
+  $("#isotopeContainer").isotope({});
+});
+
+
+$(() => {
+  $("button").on("click", () => {
+    var filterValue = $(this).attr("data-filter");
+    alert(filterValue);
+  });
+});
