@@ -485,3 +485,46 @@ MARIGN 0 auto makes it horizontally aligned */
   font-weight: 600;
   border-bottom: 3px solid #1cbaff;
 }
+
+.projectItem a img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.projectItem a:hover img {
+  transform: scale(1.2);
+}
+
+/*  */
+.projectItem {
+  position: relative;
+  overflow: hidden;
+}
+
+.projectInfo {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.projectInfo {
+  color: #fff;
+}
+
+.projectOverlay {
+  background-color: rgba(28, 186, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.projectItem a:hover .projectOverlay {
+  opacity: 1;
+}
