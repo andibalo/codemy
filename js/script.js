@@ -112,12 +112,24 @@ $(() => {
 $(window).on("load", () => {
   //Init Isotope
   $("#isotopeContainer").isotope({});
-});
 
+  //Isotope filter buttons
+  //IMPORTANT: remove span child element from button element eotherwise selector e.target or This will select
+  //the child element span that is without attrs and reutrn undefined
+  //In OTHER WORDS selected element wilk return the content inside or child element of selected elemnt
 
-$(() => {
-  $("button").on("click", () => {
-    var filterValue = $(this).attr("data-filter");
-    alert(filterValue);
+  //TO ACCESS attribute of DOM element tha tirggered the event handler we can use THIS or EVENT obj such that e.target.getAttribute('atrr name')
+  $("#filterButtons").on("click", "button", e => {
+    var filterValue = e.target.getAttribute("data-filter");
+
+    $("#isotopeContainer").isotope({
+      filter: filterValue
+    });
+
+    //find method finds child elemnts of selected element with a given selector
+    $("#filterButtons")
+      .find(".active")
+      .removeClass("active");
+    e.target.classList.add("active");
   });
 });

@@ -464,3 +464,24 @@ MARIGN 0 auto makes it horizontally aligned */
 #projectHeader .verticalHeader {
   margin-bottom: 100px;
 }
+
+#filterButtons {
+  margin-bottom: 30px;
+  padding-left: 0;
+}
+
+#filterButtons button {
+  padding: 10px 25px;
+  min-width: 80px;
+  text-transform: uppercase;
+  background: transparent;
+  box-shadow: none;
+  font-family: "Raleway", sans-serif;
+  color: #212226;
+}
+
+#filterButtons button.active {
+  color: #1cbaff;
+  font-weight: 600;
+  border-bottom: 3px solid #1cbaff;
+}
