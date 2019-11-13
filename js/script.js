@@ -142,3 +142,21 @@ $(".projectWrapper").magnificPopup({
     enabled: true
   }
 });
+
+//GOOGLE MAPS API
+
+$(window).on("load", () => {
+  // The location of myCoordinates
+  var myCoordinates = { lat: -6.23185, lng: 106.83482 };
+  // The map, centered at myCoordinates
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: myCoordinates
+  });
+  // The marker, positioned at myCoordinates
+  var marker = new google.maps.Marker({ position: myCoordinates, map: map });
+});
+
+//Get Year
+var year = new Date().getFullYear();
+$("#year").html(year);

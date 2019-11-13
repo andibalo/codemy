@@ -528,3 +528,48 @@ MARIGN 0 auto makes it horizontally aligned */
 .projectItem a:hover .projectOverlay {
   opacity: 1;
 }
+
+#map {
+  height: 300px;
+  width: 450px;
+}
+
+.locationDetails {
+  margin-bottom: 25px;
+  width: 450px;
+}
+
+#contact h4 {
+  color: #1cbaff;
+}
+
+.contactLeft p,
+.contactRight p {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contactLeft p:hover i,
+.contactRight p:hover i {
+  transition: transform 0.5s;
+}
+
+.contactLeft p:hover i,
+.contactRight p:hover i {
+  transform: scale(1.4);
+  color: #1cbaff;
+}
+
+.contactLeft p i,
+.contactRight p i {
+  margin-right: 10px;
+}
+
+.footerWrapper {
+  background: #1cbaff;
+  color: #fff;
+}
+
+#footer {
+  box-shadow: 0 -4px 0 0 #f4f4f4;
+}
