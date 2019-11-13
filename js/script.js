@@ -147,7 +147,8 @@ $(".projectWrapper").magnificPopup({
 
 $(window).on("load", () => {
   // The location of myCoordinates
-  var myCoordinates = { lat: -6.23185, lng: 106.83482 };
+  var addressString = "Tempo Scan Tower";
+  var myCoordinates = { lat: -6.235387, lng: 106.829173 };
   // The map, centered at myCoordinates
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
@@ -155,6 +156,14 @@ $(window).on("load", () => {
   });
   // The marker, positioned at myCoordinates
   var marker = new google.maps.Marker({ position: myCoordinates, map: map });
+
+  var infoWindow = new google.maps.InfoWindwo({
+    content: addressString
+  });
+
+  marker.addEventListener("click", () => {
+    infoWindow.open(map, marker);
+  });
 });
 
 //Get Year

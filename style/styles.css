@@ -318,6 +318,13 @@ MARIGN 0 auto makes it horizontally aligned */
 .teamMember:hover .teamOverlay {
   opacity: 1;
 }
+
+button.owl-prev i,
+button.owl-next i {
+  font-size: 28px;
+  color: #212226;
+}
+
 .socials {
   padding: 0;
   position: absolute;
@@ -547,22 +554,23 @@ MARIGN 0 auto makes it horizontally aligned */
 .contactRight p {
   font-size: 20px;
   cursor: pointer;
+  font-family: "Raleway", sans-serif;
 }
 
 .contactLeft p:hover i,
 .contactRight p:hover i {
-  transition: transform 0.5s;
+  transition: transform 0.4s;
 }
 
 .contactLeft p:hover i,
 .contactRight p:hover i {
-  transform: scale(1.4);
+  transform: translateX(-50%);
   color: #1cbaff;
 }
 
 .contactLeft p i,
 .contactRight p i {
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .footerWrapper {
@@ -572,4 +580,28 @@ MARIGN 0 auto makes it horizontally aligned */
 
 #footer {
   box-shadow: 0 -4px 0 0 #f4f4f4;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-group button {
+  background: #1cbaff;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.3s;
+}
+
+.form-group button:hover,
+.form-group button:focus {
+  box-shadow: 0 0 10px 0 rgba(28, 186, 255, 0.8);
+  background: #1cbaff;
+  color: #fff;
+}
+
+.form-group button:active {
+  transform: scale(0.8);
+  background: #1cbaff;
+  color: #fff;
 }
